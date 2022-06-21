@@ -1,0 +1,133 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Sheet</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="sans-serif.css">
+  </head>
+  <body>
+    <main id="main-doc">
+    <nav id="navbar">
+    <header id="header"> Menu </header>
+       <ul>
+        <li><a class = "nav-link" href="#First">first</a></li>
+        <li><a class = "nav-link" href="#Second">second</a></li>
+        <li><a class = "nav-link" href="#Six">six</a></li>
+        <li><a class = "nav-link" href="#third">third</a></li>
+        <li><a class = "nav-link" href="#Seven">seven</a></li>
+        <li><a class = "nav-link" href="#Nine">nine</a></li>        
+       </ul>
+    </nav>
+    <section class="main-section" id="First">
+    
+    <header id="First">
+      <h1>First</h1>
+    </header>
+    <p>Это параграф.</p>
+    <p>Это dog.</p>
+    <ul>
+      <li>фокс-терьер</li>
+      <li>спаниель</li>
+      <li>такса</li>
+    </ul>
+    </section>
+    <section class="main-section" id="Second">
+    <header id="Second">
+      <h1>Second</h1>
+    </header>
+    <p>Это cat.</p>
+    <p>Это people.</p>
+    <ul>
+      <li>Julia</li>
+      <li>Kate</li>
+      <li>Marina</li>
+    </ul>
+    </section>
+    <section class="main-section" id="third">
+    <header id="third">
+      <h1>third</h1>
+    </header>
+    <p>Это person.</p>
+    <p>Это head.</p>
+    </section>
+    <section class="main-section" id="Six">
+    <header id="Six">
+      <h1>Six</h1>
+    </header>
+    <p>Это gold edition.</p>
+    <code> function checkParent (src, dest) { </code>
+    <p>Это silver fox.</p>
+    <code>while (src != null) { </code>
+    </section>
+    <section class="main-section" id="Seven">
+    <header id="Seven">
+      <h1>Seven</h1>
+    </header>
+    <p>Это python.</p>
+    <code> if (src.tagName == dest) </code> 
+    <p>Это my teeth.</p>
+    <code> return src </code>
+    </section>
+    <section class="main-section" id="Nine">
+    <header id="Nine">
+      <h1>Nine</h1>
+    </header>
+    <p>Это window.</p>
+    <code> src = src.parentElement </code>
+    <p>Это genious.</p>
+    <p>Это programming.</p>
+    <code>  } return null } </code>
+    </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+.nav-link {
+  transition: all 0.4s;
+}
+@media all and (max-width: 40em) {
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100px;
+}
+}
+#navbar li {
+    border-left: 10px solid #666;
+    border-bottom: 1px solid #666;
+      }
+#navbar ul {
+    color: #666;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 5px solid #33ADFF;
+    display: block;
+      }
+.main-section{
+    border-bottom: 1px solid #666;    
+    padding: 5px;
+    text-decoration: none;
+    border-left: 5px solid #33ADFF;
+    display: block;
+}
+
+** end of undefined **
+
