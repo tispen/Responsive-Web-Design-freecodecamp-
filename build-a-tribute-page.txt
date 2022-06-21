@@ -1,0 +1,66 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevAlert</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Dev Alert</h1>
+  <figure id="img-div">
+     <img id="image" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"/>           
+    <figcaption id="img-caption">Caption of a image</figcaption>
+  </figure> 
+  <label id="tribute-info">This is a caption of a page</label>
+  <a id="tribute-link" href="https://freecodecamp.org" target="_blank">freeCodeCamp</a>
+  </main>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: #f5f6f7;
+	color: #1b1b32;
+	font-family: Helvetica;
+	margin: 0;
+}
+#main {
+  padding-top: 50px;
+}
+#title{
+  font-family: Verdana;
+}
+#img-div{
+  width: 45%;
+  border-radius: 10px;
+}
+#image{
+  max-width:100%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img-caption{
+  font-family: Verdana;
+}
+#tribute-link{
+  text-align: center;
+  padding: 0.3em;
+}
+
+** end of undefined **
+
