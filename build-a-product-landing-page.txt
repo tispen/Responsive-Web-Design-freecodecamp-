@@ -1,0 +1,245 @@
+** start of undefined **
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Original Trombones</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Baskervville|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    	<section class="heading">
+    	<header id="header">
+      <nav id="nav-bar">
+      <ul>
+      <li><a class = "nav-link" href="#Future">Future</a></li>
+        <li><a class = "nav-link" href="#How_It_Works">How It Works</a></li>
+        <li><a class = "nav-link" href="#Pricing">Pricing</a></li>  
+       </ul>
+    </nav>
+    	 <img id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="image of the project"
+            loading="lazy"
+            class="image-1"
+      />
+      <h1 class="title">Handcrafted, home-made masterpieces</h1>
+    	</header>
+    <section class="main-section" id="Future">
+    <header id="Future">
+      <h1>Future</h1>
+    </header>
+    <p>Premium Materials</p>
+    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase</p>
+    </section>
+    <section class="main-section" id="How_It_Works">
+    <header id="How_It_Works">
+      <h1>How It Works</h1>
+    </header>
+    <p>Fast Shipping</p>
+    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied..</p>
+    <video id="video">
+ <source src="https://youtu.be/y8Yv4pnO7qc">
+</video>
+    </section>
+    <section class="main-section" id="Pricing">
+    <header id="Pricing">
+      <h1>Pricing</h1>
+    </header>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+  <label id="name-label">Name</label><input type="text" name="name" id="name" placeholder="enter your name" required>
+  </label>
+  <label id="email-label">Email</label><input type="email" name="email" id="email" placeholder="enter your email" required>
+  </label>
+  <label id="number-label">Age</label><input type="number" name="age"  id="number" min="13" max="120" placeholder="enter your age">
+  <label>Which option best describes your current role?</label>
+  <select name="option" id="dropdown">
+			<option value='student'>Student</option>
+			<option value='fulltimejob'>Full Time Job</option>
+			<option value="fulltimelearn">Full Time Learner</option>
+			<option value="other">Other</option>
+		</select>
+<label>Do you want me?</label>
+<label>
+<input id="indoor" type="radio" name="want" value="yes" checked>yes</label>
+<label><input id="no" type="radio" name="want" value="no">no</label>
+<label>What would you like?</label>
+<label><input id="frontend" type="checkbox" name="like" value="frontend"> Front-end </label>
+<label>
+<input id="backend" type="checkbox" name="like" value="backend"> Back-end</label>
+<label>
+<input id="animation" type="checkbox" name="like" value="animation">  Animation</label>
+<label><input id="data" type="checkbox" name="like" value="data">Data Science</label>
+<label>Provide comments: <label>
+<textarea name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+<label>
+<input type="submit" id="submit" value="Submit" />
+</label>
+</form>
+
+    </section>
+
+** end of undefined **
+
+** start of undefined **
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baskervville', serif;
+  color:  rgb(20, 30, 40);
+  background-color: linen;
+  font-size: 16px;
+  display:flex;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: linen;
+}
+
+main {
+  display: grid;
+  row-gap: 3rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(120, 120, 120, 0.6);
+}
+
+.heading {
+  grid-column: 1 / -1;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  text-align: justify;
+}
+
+#header {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+#header-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+  color: orangered;
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title {
+    font-size: 6rem;
+  }
+  
+  .hero-subtitle,
+  .author,
+  .quote,
+  .list-title {
+    font-size: 1.8rem;
+  }
+  
+  .social-icons {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  } 
+}
+
+#nav-bar {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 2px solid #fff;
+  border-radius: 20px 5px;
+  text-align: center;
+  background-color: orangered;;
+}
+#nav-bar a {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+#navbar a:hover {
+  border-radius: 20px 5px;
+  background-color: #0066FF;
+}
+
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
+input, textarea {
+  background-color: #fff2d9;
+  border: 1px solid #882805;
+  color: #d53e07;
+}
+input[id="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #fff2d9;
+border-color:#882805;
+  min-width: 300px;
+}
+
+#form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+** end of undefined **
+
